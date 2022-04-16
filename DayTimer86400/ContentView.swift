@@ -21,18 +21,18 @@ struct ContentView: View {
                     .edgesIgnoringSafeArea(.all)
                 
                 TimerView()
-                    .navigationBarTitleDisplayMode(.inline)
                     .toolbar {
                         ToolbarItem(placement: .navigationBarTrailing) {
-                            Button(action: {
-                                
-                            }){
-                                Image(systemName: "gear")
-                                    .foregroundColor(Color.textColor)
+                            NavigationLink(destination: SettingView()) {
+                                VStack {
+                                    Image(systemName: "gear")
+                                        .foregroundColor(Color.textColor)
+                                }
                             }
                         }
                     }
             }
+            .navigationBarTitleDisplayMode(.inline)
         }
     }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		94567D10280AE36400F5849C /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94567D0F280AE36400F5849C /* SettingView.swift */; };
 		94C2D1E4280AB2A300944E87 /* DayTimer86400App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C2D1E3280AB2A300944E87 /* DayTimer86400App.swift */; };
 		94C2D1E6280AB2A300944E87 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C2D1E5280AB2A300944E87 /* ContentView.swift */; };
 		94C2D1E8280AB2A600944E87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94C2D1E7280AB2A600944E87 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		94567D0F280AE36400F5849C /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		94C2D1E0280AB2A300944E87 /* DayTimer86400.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DayTimer86400.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94C2D1E3280AB2A300944E87 /* DayTimer86400App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayTimer86400App.swift; sourceTree = "<group>"; };
 		94C2D1E5280AB2A300944E87 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 				94C2D1E3280AB2A300944E87 /* DayTimer86400App.swift */,
 				94C2D1E5280AB2A300944E87 /* ContentView.swift */,
 				94C2D1F1280AB37600944E87 /* TimerView.swift */,
+				94567D0F280AE36400F5849C /* SettingView.swift */,
 				94C2D1E7280AB2A600944E87 /* Assets.xcassets */,
 				94C2D1E9280AB2A600944E87 /* Preview Content */,
 			);
@@ -143,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94C2D1F2280AB37600944E87 /* TimerView.swift in Sources */,
+				94567D10280AE36400F5849C /* SettingView.swift in Sources */,
 				94C2D1E6280AB2A300944E87 /* ContentView.swift in Sources */,
 				94C2D1E4280AB2A300944E87 /* DayTimer86400App.swift in Sources */,
 			);
