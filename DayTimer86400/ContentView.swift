@@ -8,9 +8,32 @@
 
 import SwiftUI
 
+extension Color {
+    static let textColor = Color("TextColor")
+    static let backgroundColor = Color("BackgroundColor")
+}
+
 struct ContentView: View {
     var body: some View {
-        TimerView()
+        NavigationView {
+            ZStack{
+                Color.backgroundColor
+                    .edgesIgnoringSafeArea(.all)
+                
+                TimerView()
+                    .navigationBarTitleDisplayMode(.inline)
+                    .toolbar {
+                        ToolbarItem(placement: .navigationBarTrailing) {
+                            Button(action: {
+                                
+                            }){
+                                Image(systemName: "gear")
+                                    .foregroundColor(Color.textColor)
+                            }
+                        }
+                    }
+            }
+        }
     }
 }
 

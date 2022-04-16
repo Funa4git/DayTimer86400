@@ -20,6 +20,7 @@ struct TimerView: View {
             Text("view of %")
             Text("41.219 %")
         }
+        .foregroundColor(Color.textColor)
     }
 }
 
