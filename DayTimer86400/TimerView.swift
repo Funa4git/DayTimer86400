@@ -11,14 +11,38 @@ import SwiftUI
 struct TimerView: View {
     var body: some View {
         VStack {
-            Text("current day time")
-            Text("50787 sec")
-            
-            Text("last day time")
-            Text("35613 sec")
-            
-            Text("view of %")
-            Text("41.219 %")
+            Spacer()
+            VStack {
+                Text("current day time")
+                    .font(.largeTitle)
+                HStack {
+                    Text("50787")
+                    Text("sec")
+                }
+                .font(.title)
+            }
+            .padding()
+            VStack {
+                Text("last day time")
+                    .font(.largeTitle)
+                HStack {
+                    Text("35613")
+                    Text("sec")
+                }
+                    .font(.title)
+            }
+            .padding()
+            VStack {
+                Text("view of %")
+                    .font(.largeTitle)
+                HStack {
+                    Text("41.219")
+                    Text("%")
+                }
+                    .font(.title)
+            }
+            .padding()
+            Spacer()
         }
         .foregroundColor(Color.textColor)
     }
