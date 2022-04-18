@@ -12,7 +12,9 @@ struct TimerView: View {
     @State var hour = Calendar.current.component(.hour, from: Date())
     @State var minute = Calendar.current.component(.minute, from: Date())
     @State var second = Calendar.current.component(.second, from: Date())
-    let daySecond = 24*60*60
+    @State var currentSecond = 0.0
+    @State var lastSecond = 24 * 60 * 60 * 1.0
+    let daySecond = 24 * 60 * 60 * 1.0
     let timer = Timer.publish(every: 1, on: .current, in: .common).autoconnect()
     
     var body: some View {
@@ -22,7 +24,7 @@ struct TimerView: View {
                 Text("current day time")
                     .font(.title)
                 HStack {
-                    Text("\(hour*60*60 + minute*60 + second)")
+                    Text("\(currentSecond, specifier: "%.0f")")
                     Text("sec")
                 }
                 .font(.largeTitle)
@@ -31,23 +33,32 @@ struct TimerView: View {
                 self.hour = Calendar.current.component(.hour, from: Date())
                 self.minute = Calendar.current.component(.minute, from: Date())
                 self.second = Calendar.current.component(.second, from: Date())
+                
+                self.currentSecond = Double(hour * 60 * 60 + minute * 60 + second)
+                self.lastSecond = daySecond - currentSecond
             }
             .padding()
+            
+            Spacer()
+            
             VStack {
                 Text("last day time")
                     .font(.title)
                 HStack {
-                    Text("\(daySecond - (hour*60*60 + minute*60 + second))")
+                    Text("\(lastSecond, specifier: "%.0f")")
                     Text("sec")
                 }
                 .font(.largeTitle)
             }
             .padding()
+            
+            Spacer()
+            
             VStack {
                 Text("view of %")
                     .font(.title)
                 HStack {
-                    Text("\(100 * (hour*60*60 + minute*60 + second) / daySecond)")
+                    Text("\(currentSecond / daySecond * 100, specifier: "%.3f")")
                     Text("%")
                 }
                 .font(.largeTitle)
@@ -59,8 +70,3 @@ struct TimerView: View {
     }
 }
 
-struct TimerView_Previews: PreviewProvider {
-    static var previews: some View {
-        TimerView()
-    }
-}

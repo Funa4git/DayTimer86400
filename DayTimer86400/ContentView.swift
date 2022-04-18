@@ -14,6 +14,8 @@ extension Color {
 }
 
 struct ContentView: View {
+    @State var selectionDate = Date()
+    
     var body: some View {
         NavigationView {
             ZStack{
@@ -21,16 +23,16 @@ struct ContentView: View {
                     .edgesIgnoringSafeArea(.all)
                 
                 TimerView()
-                    .toolbar {
-                        ToolbarItem(placement: .navigationBarTrailing) {
-                            NavigationLink(destination: SettingView()) {
-                                VStack {
-                                    Image(systemName: "gear")
-                                        .foregroundColor(Color.textColor)
-                                }
-                            }
-                        }
-                    }
+//                    .toolbar {
+//                        ToolbarItem(placement: .navigationBarTrailing) {
+//                            NavigationLink(destination: SettingView()) {
+//                                VStack {
+//                                    Image(systemName: "gear")
+//                                        .foregroundColor(Color.textColor)
+//                                }
+//                            }
+//                        }
+//                    }
             }
             .navigationBarTitleDisplayMode(.inline)
         }

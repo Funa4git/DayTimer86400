@@ -10,23 +10,16 @@ import SwiftUI
 
 struct SettingView: View {
     var body: some View {
-        NavigationView {
-            ZStack {
-                Color.backgroundColor
-                    .edgesIgnoringSafeArea(.all)
-                
-                VStack{
-                    Text("設定！！！！")
+        ZStack {
+            Form {
+                Section {
+                    HStack {
+                        Text("仮置き")
+                    }
                 }
-                .foregroundColor(Color.textColor)
             }
-            .navigationBarTitleDisplayMode(.inline)
         }
+        .navigationBarTitleDisplayMode(/*@START_MENU_TOKEN@*/.inline/*@END_MENU_TOKEN@*/)
     }
 }
 
-struct SettingView_Previews: PreviewProvider {
-    static var previews: some View {
-        SettingView()
-    }
-}
