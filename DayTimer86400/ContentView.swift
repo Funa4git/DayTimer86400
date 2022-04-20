@@ -15,9 +15,9 @@ extension Color {
 
 struct ContentView: View {
     @State var selectionDate = Date()
-    @State var isCenterText = false
-    @State var isChangeFontSize = false
-    @State var fontSizeVal : Double = 40.0
+    @AppStorage("isCenterTextKey") var isCenterText = false
+    @AppStorage("isChangeFontSizeKey") var isChangeFontSize = false
+    @AppStorage("fontSizeValKey") var fontSizeVal : Double = 40.0
     
     var body: some View {
         NavigationView {
