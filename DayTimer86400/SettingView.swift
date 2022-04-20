@@ -37,6 +37,7 @@ struct SettingView: View {
                             Text("※表示が乱れる可能性があります。")
                                 .multilineTextAlignment(.center)
                             Text("\(fontSizeVal, specifier: "%.0f")")
+                                .fontWeight(.bold)
                                 .multilineTextAlignment(.center)
                             Slider(value: $fontSizeVal, in: 10...100, step: 5)
                                 .padding(.horizontal)

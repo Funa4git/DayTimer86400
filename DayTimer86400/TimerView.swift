@@ -70,7 +70,7 @@ struct TimerView: View {
                 }
                 
                 if isChangeFontSize {
-                    Text("\(currentSecond, specifier: "%.0f") sec")
+                    Text("\(lastSecond, specifier: "%.0f") sec")
                         .font(.system(size: fontSizeVal, design:.default))
                 } else {
                     Text("\(lastSecond, specifier: "%.0f") sec")
@@ -93,7 +93,7 @@ struct TimerView: View {
                     }
                 }
                 if isChangeFontSize {
-                    Text("\(currentSecond, specifier: "%.0f") sec")
+                    Text("\(lastSecond / daySecond * 100, specifier: "%.3f") %")
                         .font(.system(size: fontSizeVal, design:.default))
                 } else {
                     Text("\(lastSecond / daySecond * 100, specifier: "%.3f") %")
