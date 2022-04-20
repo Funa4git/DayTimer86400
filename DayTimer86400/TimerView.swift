@@ -21,8 +21,11 @@ struct TimerView: View {
         VStack {
             Spacer()
             VStack {
-                Text("current day time")
-                    .font(.title)
+                HStack {
+                    Text("  current day time")
+                        .font(.title)
+                    Spacer()
+                }
                 HStack {
                     Text("\(currentSecond, specifier: "%.0f")")
                     Text("sec")
@@ -42,8 +45,11 @@ struct TimerView: View {
             Spacer()
             
             VStack {
-                Text("last day time")
-                    .font(.title)
+                HStack {
+                    Text("  last day time")
+                        .font(.title)
+                    Spacer()
+                }
                 HStack {
                     Text("\(lastSecond, specifier: "%.0f")")
                     Text("sec")
@@ -55,10 +61,13 @@ struct TimerView: View {
             Spacer()
             
             VStack {
-                Text("view of %")
-                    .font(.title)
                 HStack {
-                    Text("\(currentSecond / daySecond * 100, specifier: "%.3f")")
+                    Text("  view of %")
+                        .font(.title)
+                    Spacer()
+                }
+                HStack {
+                    Text("\(lastSecond / daySecond * 100, specifier: "%.3f")")
                     Text("%")
                 }
                 .font(.largeTitle)
@@ -67,6 +76,14 @@ struct TimerView: View {
             Spacer()
         }
         .foregroundColor(Color.textColor)
+    }
+}
+
+
+
+struct TimerView_Previews: PreviewProvider {
+    static var previews: some View {
+        TimerView()
     }
 }
 
