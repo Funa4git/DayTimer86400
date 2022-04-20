@@ -9,9 +9,9 @@
 import SwiftUI
 
 struct TimerView: View {
-    @State var hour = Calendar.current.component(.hour, from: Date())
-    @State var minute = Calendar.current.component(.minute, from: Date())
-    @State var second = Calendar.current.component(.second, from: Date())
+    @State var nowHour = Calendar.current.component(.hour, from: Date())
+    @State var nowMinute = Calendar.current.component(.minute, from: Date())
+    @State var nowSecond = Calendar.current.component(.second, from: Date())
     @State var currentSecond = 0.0
     @State var lastSecond = 24 * 60 * 60 * 1.0
     @Binding var isCenterText: Bool
@@ -46,11 +46,11 @@ struct TimerView: View {
             }
             // 1秒に1回現在時刻を確認
             .onReceive(timer){ _ in
-                self.hour = Calendar.current.component(.hour, from: Date())
-                self.minute = Calendar.current.component(.minute, from: Date())
-                self.second = Calendar.current.component(.second, from: Date())
+                self.nowHour = Calendar.current.component(.hour, from: Date())
+                self.nowMinute = Calendar.current.component(.minute, from: Date())
+                self.nowSecond = Calendar.current.component(.second, from: Date())
                 
-                self.currentSecond = Double(hour * 60 * 60 + minute * 60 + second)
+                self.currentSecond = Double(nowHour * 60 * 60 + nowMinute * 60 + nowSecond)
                 self.lastSecond = daySecond - currentSecond
             }
             .padding()
