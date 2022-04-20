@@ -17,7 +17,7 @@ struct ContentView: View {
     @State var selectionDate = Date()
     @State var isCenterText = false
     @State var isChangeFontSize = false
-    @State var fontSizeVal : Double = 50
+    @State var fontSizeVal : Double = 40.0
     
     var body: some View {
         NavigationView {
@@ -25,7 +25,7 @@ struct ContentView: View {
                 Color.backgroundColor
                     .edgesIgnoringSafeArea(.all)
                 
-                TimerView(isCenterText: $isCenterText, isChangeFontSize: $isChangeFontSize)
+                TimerView(isCenterText: $isCenterText, isChangeFontSize: $isChangeFontSize, fontSizeVal: $fontSizeVal)
                     .toolbar {
                         ToolbarItem(placement: .navigationBarTrailing) {
                             NavigationLink(destination: SettingView(isCenterText: $isCenterText, isChangeFontSize: $isChangeFontSize, fontSizeVal: $fontSizeVal)) {

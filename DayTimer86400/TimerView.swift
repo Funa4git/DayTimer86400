@@ -16,6 +16,7 @@ struct TimerView: View {
     @State var lastSecond = 24 * 60 * 60 * 1.0
     @Binding var isCenterText: Bool
     @Binding var isChangeFontSize: Bool
+    @Binding var fontSizeVal: Double
     
     let daySecond = 24 * 60 * 60 * 1.0
     let timer = Timer.publish(every: 1, on: .current, in: .common).autoconnect()
@@ -34,12 +35,16 @@ struct TimerView: View {
                         Spacer()
                     }
                 }
-                HStack {
-                    Text("\(currentSecond, specifier: "%.0f")")
-                    Text("sec")
+                
+                if isChangeFontSize {
+                    Text("\(currentSecond, specifier: "%.0f") sec")
+                        .font(.system(size: fontSizeVal, design:.default))
+                } else {
+                    Text("\(currentSecond, specifier: "%.0f") sec")
+                        .font(.largeTitle)
                 }
-                .font(.largeTitle)
             }
+            // 1秒に1回現在時刻を確認
             .onReceive(timer){ _ in
                 self.hour = Calendar.current.component(.hour, from: Date())
                 self.minute = Calendar.current.component(.minute, from: Date())
@@ -63,11 +68,14 @@ struct TimerView: View {
                         Spacer()
                     }
                 }
-                HStack {
-                    Text("\(lastSecond, specifier: "%.0f")")
-                    Text("sec")
+                
+                if isChangeFontSize {
+                    Text("\(currentSecond, specifier: "%.0f") sec")
+                        .font(.system(size: fontSizeVal, design:.default))
+                } else {
+                    Text("\(lastSecond, specifier: "%.0f") sec")
+                        .font(.largeTitle)
                 }
-                .font(.largeTitle)
             }
             .padding()
             
@@ -84,11 +92,13 @@ struct TimerView: View {
                         Spacer()
                     }
                 }
-                HStack {
-                    Text("\(lastSecond / daySecond * 100, specifier: "%.3f")")
-                    Text("%")
+                if isChangeFontSize {
+                    Text("\(currentSecond, specifier: "%.0f") sec")
+                        .font(.system(size: fontSizeVal, design:.default))
+                } else {
+                    Text("\(lastSecond / daySecond * 100, specifier: "%.3f") %")
+                        .font(.largeTitle)
                 }
-                .font(.largeTitle)
             }
             .padding()
             Spacer()
@@ -101,7 +111,7 @@ struct TimerView: View {
 
 struct TimerView_Previews: PreviewProvider {
     static var previews: some View {
-        TimerView(isCenterText: .constant(false), isChangeFontSize: .constant(false))
+        TimerView(isCenterText: .constant(false), isChangeFontSize: .constant(false), fontSizeVal: .constant(40.0))
     }
 }
 
