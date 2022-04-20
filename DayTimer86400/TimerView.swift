@@ -14,6 +14,9 @@ struct TimerView: View {
     @State var second = Calendar.current.component(.second, from: Date())
     @State var currentSecond = 0.0
     @State var lastSecond = 24 * 60 * 60 * 1.0
+    @Binding var isCenterText: Bool
+    @Binding var isChangeFontSize: Bool
+    
     let daySecond = 24 * 60 * 60 * 1.0
     let timer = Timer.publish(every: 1, on: .current, in: .common).autoconnect()
     
@@ -21,10 +24,15 @@ struct TimerView: View {
         VStack {
             Spacer()
             VStack {
-                HStack {
-                    Text("  current day time")
+                if isCenterText {
+                    Text("current day time")
                         .font(.title)
-                    Spacer()
+                } else {
+                    HStack {
+                        Text("  current day time")
+                            .font(.title)
+                        Spacer()
+                    }
                 }
                 HStack {
                     Text("\(currentSecond, specifier: "%.0f")")
@@ -45,10 +53,15 @@ struct TimerView: View {
             Spacer()
             
             VStack {
-                HStack {
+                if isCenterText {
                     Text("  last day time")
                         .font(.title)
-                    Spacer()
+                } else {
+                    HStack {
+                        Text("  last day time")
+                            .font(.title)
+                        Spacer()
+                    }
                 }
                 HStack {
                     Text("\(lastSecond, specifier: "%.0f")")
@@ -61,10 +74,15 @@ struct TimerView: View {
             Spacer()
             
             VStack {
-                HStack {
-                    Text("  view of %")
+                if isCenterText {
+                    Text("  view of %  ")
                         .font(.title)
-                    Spacer()
+                } else {
+                    HStack {
+                        Text("  view of %  ")
+                            .font(.title)
+                        Spacer()
+                    }
                 }
                 HStack {
                     Text("\(lastSecond / daySecond * 100, specifier: "%.3f")")
@@ -83,7 +101,7 @@ struct TimerView: View {
 
 struct TimerView_Previews: PreviewProvider {
     static var previews: some View {
-        TimerView()
+        TimerView(isCenterText: .constant(false), isChangeFontSize: .constant(false))
     }
 }
 

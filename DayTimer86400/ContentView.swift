@@ -15,6 +15,9 @@ extension Color {
 
 struct ContentView: View {
     @State var selectionDate = Date()
+    @State var isCenterText = false
+    @State var isChangeFontSize = false
+    @State var fontSizeVal : Double = 50
     
     var body: some View {
         NavigationView {
@@ -22,17 +25,17 @@ struct ContentView: View {
                 Color.backgroundColor
                     .edgesIgnoringSafeArea(.all)
                 
-                TimerView()
-//                    .toolbar {
-//                        ToolbarItem(placement: .navigationBarTrailing) {
-//                            NavigationLink(destination: SettingView()) {
-//                                VStack {
-//                                    Image(systemName: "gear")
-//                                        .foregroundColor(Color.textColor)
-//                                }
-//                            }
-//                        }
-//                    }
+                TimerView(isCenterText: $isCenterText, isChangeFontSize: $isChangeFontSize)
+                    .toolbar {
+                        ToolbarItem(placement: .navigationBarTrailing) {
+                            NavigationLink(destination: SettingView(isCenterText: $isCenterText, isChangeFontSize: $isChangeFontSize, fontSizeVal: $fontSizeVal)) {
+                                VStack {
+                                    Image(systemName: "gear")
+                                        .foregroundColor(Color.textColor)
+                                }
+                            }
+                        }
+                    }
             }
             .navigationBarTitleDisplayMode(.inline)
         }
