@@ -26,6 +26,7 @@ struct SettingView: View {
         ZStack {
             Form {
                 Section(header: Text("書式設定")) {
+                    Text("※Widgetの更新頻度は15分です。")
                     Toggle(isOn: $isCenterText) {
                         Text("中央揃え")
                     }
