@@ -20,6 +20,8 @@
 		94C2D1E8280AB2A600944E87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94C2D1E7280AB2A600944E87 /* Assets.xcassets */; };
 		94C2D1EB280AB2A600944E87 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94C2D1EA280AB2A600944E87 /* Preview Assets.xcassets */; };
 		94C2D1F2280AB37600944E87 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C2D1F1280AB37600944E87 /* TimerView.swift */; };
+		94E6EF312811506200735DA2 /* extensionDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E6EF302811506100735DA2 /* extensionDate.swift */; };
+		94E6EF32281151D900735DA2 /* extensionDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E6EF302811506100735DA2 /* extensionDate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,7 @@
 		94C2D1EA280AB2A600944E87 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		94C2D1F1280AB37600944E87 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		94C2D1F3280ABC7B00944E87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		94E6EF302811506100735DA2 /* extensionDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionDate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				94567D1C280FF95D00F5849C /* WidgetTimer86400.swift */,
+				94E6EF302811506100735DA2 /* extensionDate.swift */,
 				94567D1E280FF95D00F5849C /* WidgetTimer86400.intentdefinition */,
 				94567D1F280FF96000F5849C /* Assets.xcassets */,
 				94567D21280FF96000F5849C /* Info.plist */,
@@ -249,6 +253,7 @@
 			files = (
 				94567D1D280FF95D00F5849C /* WidgetTimer86400.swift in Sources */,
 				94567D22280FF96000F5849C /* WidgetTimer86400.intentdefinition in Sources */,
+				94E6EF312811506200735DA2 /* extensionDate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +266,7 @@
 				94567D23280FF96000F5849C /* WidgetTimer86400.intentdefinition in Sources */,
 				94C2D1E6280AB2A300944E87 /* ContentView.swift in Sources */,
 				94C2D1E4280AB2A300944E87 /* DayTimer86400App.swift in Sources */,
+				94E6EF32281151D900735DA2 /* extensionDate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
