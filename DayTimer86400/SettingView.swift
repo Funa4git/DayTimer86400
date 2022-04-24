@@ -47,8 +47,12 @@ struct SettingView: View {
                 }
                 
                 Section(header: Text("Credit")) {
-                    Text("原案・開発協力・Android版開発\n：IJK単位系")
-                        .fontWeight(.bold)
+                    HStack {
+                        Text("原案：IJK単位系")
+                            .fontWeight(.bold)
+                            .multilineTextAlignment(.leading)
+                        Spacer()
+                    }
                     HStack {
                         Image(systemName: "link")
                             .foregroundColor(.white)
@@ -85,8 +89,19 @@ struct SettingView: View {
                     HStack {
                     }
                 }) {
-                    Text("iOS版開発・要望・問い合わせ\n：Funa")
-                        .fontWeight(.bold)
+                    VStack {
+                        HStack {
+                            Text("開発：Funa")
+                                .fontWeight(.bold)
+                                .multilineTextAlignment(.leading)
+                            Spacer()
+                        }
+                        HStack{
+                            Text("-要望・問い合わせ先")
+                                .multilineTextAlignment(.leading)
+                            Spacer()
+                        }
+                    }
                     HStack {
                         Image(systemName: "link")
                             .foregroundColor(.white)
