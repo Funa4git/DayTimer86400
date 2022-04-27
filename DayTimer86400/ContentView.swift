@@ -20,26 +20,51 @@ struct ContentView: View {
     @AppStorage("fontSizeValKey") var fontSizeVal : Double = 40.0
     
     var body: some View {
-        NavigationView {
-            ZStack{
-                Color.backgroundColor
-                    .edgesIgnoringSafeArea(.all)
-                
-                TimerView(isCenterText: $isCenterText, isChangeFontSize: $isChangeFontSize, fontSizeVal: $fontSizeVal)
-                    .toolbar {
-                        ToolbarItem(placement: .navigationBarTrailing) {
-                            NavigationLink(destination: SettingView(isCenterText: $isCenterText, isChangeFontSize: $isChangeFontSize, fontSizeVal: $fontSizeVal)) {
-                                VStack {
-                                    Image(systemName: "gear")
-                                        .foregroundColor(Color.textColor)
+        TabView {
+            NavigationView {
+                ZStack {
+                    Color.backgroundColor
+                        .edgesIgnoringSafeArea(.all)
+                    
+                    TimerView(isCenterText: $isCenterText, isChangeFontSize: $isChangeFontSize, fontSizeVal: $fontSizeVal)
+                        .toolbar {
+                            ToolbarItem(placement: .navigationBarTrailing) {
+                                NavigationLink(destination: SettingView(isCenterText: $isCenterText, isChangeFontSize: $isChangeFontSize, fontSizeVal: $fontSizeVal)) {
+                                    VStack {
+                                        Image(systemName: "gear")
+                                            .foregroundColor(Color.textColor)
+                                    }
                                 }
                             }
                         }
-                    }
+                }
+                .navigationBarTitleDisplayMode(.inline)
             }
-            .navigationBarTitleDisplayMode(.inline)
+            .navigationViewStyle(.stack)
+            .tabItem({
+                Image(systemName: "clock")
+                Text("Clock")
+            })
+            
+            NavigationView {
+                StopwatchView()
+            }
+            .navigationViewStyle(.stack)
+            .tabItem({
+                Image(systemName: "stopwatch")
+                Text("Stopwatch")
+            })
+            
+            NavigationView {
+                
+            }
+            .navigationViewStyle(.stack)
+            .tabItem({
+                Image(systemName: "timer")
+                Text("Timer")
+            })
+            
         }
-        .navigationViewStyle(.stack)
     }
 }
 
