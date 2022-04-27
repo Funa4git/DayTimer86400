@@ -14,7 +14,6 @@ This application is available since iOS 14.0, iPadOS 14.0.
 - Japanese
 ## Note
 The following functions will be supported sequentially in the future.
-- The remaining time is indicated by the background color. (For widget)
 - Update widget more frequently.
 - Time signal by push notification.
 - Stopwatch function.
