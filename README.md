@@ -2,7 +2,10 @@
 ## Description
 This application for iOS and iPad OS aims to make people aware that a day is 86,400 seconds.
 ## Demo
-No demo.
+- Widget
+
+<img src="https://user-images.githubusercontent.com/83420947/165471995-37f0bc37-0e24-4f98-9a92-af28eeffc34a.jpg" width="300px">
+
 ## Features
 This application supports the Widget function.
 ## Requirement
