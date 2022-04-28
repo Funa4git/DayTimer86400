@@ -14,6 +14,7 @@ struct TimerView: View {
     private let timer = Timer.publish(every: 0.1, on: .current, in: .common).autoconnect()
     @State private var nowDate = Date()
     @State private var timerSecond = 0.0
+    @State private var isShowSheet = false
     
     func timerCount() -> Double {
         nowDate = Date()
@@ -32,34 +33,52 @@ struct TimerView: View {
                     .font(.custom("Futura", size: 30))
                     .foregroundColor(Color.white)
                 
-                Text("\(String(saveTimerDate.year))/\(saveTimerDate.month)/\(saveTimerDate.day) \(saveTimerDate.hour):\(saveTimerDate.minute)")
+                Text("\(String(saveTimerDate.year))/\(saveTimerDate.month, specifier: "%02d")/\(saveTimerDate.day, specifier: "%02d") \(saveTimerDate.hour, specifier: "%02d"):\(saveTimerDate.minute, specifier: "%02d")")
                     .font(.custom("Futura", size: 30))
                     .foregroundColor(Color.white)
                 
-                Text(String(format:"%.0f", timerSecond) + " sec")
-                    .font(.custom("Futura", size: 50))
+                Text("\(timerSecond, specifier: "%.0f") sec")
+                    .font(.custom("Futura", size: 40))
                     .foregroundColor(Color.textColor)
                     .padding()
                 
                 Spacer()
                 
                 Button(action: {
-                    
+                    isShowSheet = true
                 }) {
                     Text("Change Date")
                         .font(.title)
-                        .frame(width: 200, height: 80)
+                        .frame(width: 200, height: 50)
                         .imageScale(.large)
-                        .background(Color.green)
+                        .background(Color.red)
                         .foregroundColor(.white)
                         .cornerRadius(50)
+                }
+                .sheet(isPresented: $isShowSheet) {
+                    VStack {
+                        Spacer()
+                        
+                        Text("現在時刻から設定時刻までの秒数をリアルタイムで表示します。")
+                            .font(.title)
+                            .padding()
+                        
+                        DatePicker("設定時刻", selection: $saveTimerDate)
+                            .labelsHidden()
+                        
+                        Spacer()
+                    }
                 }
                 
                 Spacer()
             }
             // 0.1秒に1回現在時刻を確認
             .onReceive(timer){ _ in
-                timerSecond = abs(timerCount())
+                if isShowSheet {
+                    
+                } else {
+                    timerSecond = abs(timerCount())
+                }
             }
         }
     }

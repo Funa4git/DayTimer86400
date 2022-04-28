@@ -52,7 +52,7 @@ struct StopwatchView: View {
             VStack {
                 Spacer()
                 
-                Text(String(format:"%.0f", stopwatchSecond) + " sec")
+                Text("\(stopwatchSecond, specifier: "%.0f") sec")
                     .font(.custom("Futura", size: 50))
                     .foregroundColor(Color.textColor)
                 
