@@ -4,7 +4,11 @@ This application for iOS and iPad OS aims to make people aware that a day is 86,
 ## Demo
 - Widget
 
-<img src="https://user-images.githubusercontent.com/83420947/165471995-37f0bc37-0e24-4f98-9a92-af28eeffc34a.jpg" width="300px">
+<img src="https://user-images.githubusercontent.com/83420947/165809976-02d1d904-16df-4035-97de-93ab179431ea.jpg" width="300px">
+
+- iPhone
+
+<img src="https://user-images.githubusercontent.com/83420947/165810224-571b36d4-9c27-416f-ae8c-9be6f5c33591.png" width="200px"> <img src="https://user-images.githubusercontent.com/83420947/165810245-27f245b5-aaae-4990-bde9-19a83541e380.png" width="200px"> <img src="https://user-images.githubusercontent.com/83420947/165810261-093e332d-98f9-4bb5-bdb7-e434d05ccf10.png" width="200px">
 
 ## Features
 This application supports the Widget function.
@@ -16,7 +20,6 @@ This application is available since iOS 14.0, iPadOS 14.0.
 The following functions will be supported sequentially in the future.
 - Update widget more frequently.
 - Time signal by push notification.
-- Stopwatch function.
 - Simple view mode.
 - watchOS Support.
 - App Clip Support.
