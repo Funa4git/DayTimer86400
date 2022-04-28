@@ -19,7 +19,7 @@ struct ClockView: View {
     @Binding var fontSizeVal: Double
     
     let daySecond = 24 * 60 * 60 * 1.0
-    let timer = Timer.publish(every: 1, on: .current, in: .common).autoconnect()
+    private let timer = Timer.publish(every: 1, on: .current, in: .common).autoconnect()
     
     var body: some View {
         VStack {
