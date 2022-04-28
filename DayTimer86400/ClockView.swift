@@ -12,6 +12,7 @@ struct ClockView: View {
     @State var nowHour = Calendar.current.component(.hour, from: Date())
     @State var nowMinute = Calendar.current.component(.minute, from: Date())
     @State var nowSecond = Calendar.current.component(.second, from: Date())
+    
     @State var currentSecond = 0.0
     @State var lastSecond = 24 * 60 * 60 * 1.0
     @Binding var isCenterText: Bool

@@ -13,6 +13,9 @@ struct StopwatchView: View {
     @AppStorage("isStopwatchRunningKey") var isStopwatchRunning = false
     @AppStorage("countStopwatchKey") var saveCounter = 0.0
     
+    @Binding var isChangeFontSize: Bool
+    @Binding var fontSizeVal: Double
+    
     private let timer = Timer.publish(every: 0.1, on: .current, in: .common).autoconnect()
     @State private var nowDate = Date()
     @State private var stopwatchSecond = 0.0
@@ -52,9 +55,15 @@ struct StopwatchView: View {
             VStack {
                 Spacer()
                 
-                Text("\(stopwatchSecond, specifier: "%.0f") sec")
-                    .font(.custom("Futura", size: 50))
-                    .foregroundColor(Color.textColor)
+                if isChangeFontSize {
+                    Text("\(stopwatchSecond, specifier: "%.0f") sec")
+                        .font(.custom("Futura", size: fontSizeVal))
+                        .foregroundColor(Color.textColor)
+                } else {
+                    Text("\(stopwatchSecond, specifier: "%.0f") sec")
+                        .font(.custom("Futura", size: 50))
+                        .foregroundColor(Color.textColor)
+                }
                 
                 Spacer()
                 
@@ -117,6 +126,6 @@ struct StopwatchView: View {
 
 struct StopwatchView_Previews: PreviewProvider {
     static var previews: some View {
-        StopwatchView()
+        StopwatchView(isChangeFontSize: .constant(false), fontSizeVal: .constant(40.0))
     }
 }

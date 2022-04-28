@@ -16,6 +16,9 @@ struct TimerView: View {
     @State private var timerSecond = 0.0
     @State private var isShowSheet = false
     
+    @Binding var isChangeFontSize: Bool
+    @Binding var fontSizeVal: Double
+    
     func timerCount() -> Double {
         nowDate = Date()
         return saveTimerDate.timeIntervalSince(nowDate)
@@ -37,10 +40,18 @@ struct TimerView: View {
                     .font(.custom("Futura", size: 30))
                     .foregroundColor(Color.white)
                 
-                Text("\(timerSecond, specifier: "%.0f") sec")
-                    .font(.custom("Futura", size: 40))
-                    .foregroundColor(Color.textColor)
-                    .padding()
+                if isChangeFontSize {
+                    Text("\(timerSecond, specifier: "%.0f") sec")
+                        .font(.custom("Futura", size: fontSizeVal))
+                        .foregroundColor(Color.textColor)
+                        .padding()
+                } else {
+                    Text("\(timerSecond, specifier: "%.0f") sec")
+                        .font(.custom("Futura", size: 40))
+                        .foregroundColor(Color.textColor)
+                        .padding()
+                }
+                
                 
                 Spacer()
                 
@@ -86,6 +97,6 @@ struct TimerView: View {
 
 struct TimerView_Previews: PreviewProvider {
     static var previews: some View {
-        TimerView()
+        TimerView(isChangeFontSize: .constant(false), fontSizeVal: .constant(40.0))
     }
 }
