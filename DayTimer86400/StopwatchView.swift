@@ -15,31 +15,31 @@ struct StopwatchView: View {
     
     private let timer = Timer.publish(every: 0.1, on: .current, in: .common).autoconnect()
     @State private var nowDate = Date()
-    @State private var viewSecond = 0.0
+    @State private var stopwatchSecond = 0.0
     
     // 直近でスタートボタンが押された時刻を記録
-    func saveStartTimer() {
+    private func saveStartTimer() {
         startStopwatch = Date()
     }
     // カウンター
-    func fetchCount() -> Double {
+    private func fetchCount() -> Double {
         nowDate = Date()
         return saveCounter + nowDate.timeIntervalSince(startStopwatch)
     }
     // ボタンが押された時の関数
-    func pushStart() {
+    private func pushStart() {
         saveStartTimer()
         isStopwatchRunning = true
     }
-    func pushStop() {
+    private func pushStop() {
         isStopwatchRunning = false
         // saveCounterの更新はここのみで行うこと。
         saveCounter = fetchCount()
     }
-    func pushReset() {
+    private func pushReset() {
         saveCounter = 0
         // リセットボタンを押したときに即座に表示を0にする
-        viewSecond = 0
+        stopwatchSecond = 0
         isStopwatchRunning = false
     }
     
@@ -52,7 +52,7 @@ struct StopwatchView: View {
             VStack {
                 Spacer()
                 
-                Text(String(format:"%.0f", viewSecond))
+                Text(String(format:"%.0f", stopwatchSecond) + " sec")
                     .font(.custom("Futura", size: 50))
                     .foregroundColor(Color.textColor)
                 
@@ -105,9 +105,9 @@ struct StopwatchView: View {
             // 0.1秒に1回現在時刻を確認
             .onReceive(timer){ _ in
                 if isStopwatchRunning {
-                    viewSecond = fetchCount()
+                    stopwatchSecond = fetchCount()
                 } else {
-                    viewSecond = saveCounter
+                    stopwatchSecond = saveCounter
                 }
             }
         }
