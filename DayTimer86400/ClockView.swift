@@ -19,7 +19,7 @@ struct ClockView: View {
     @Binding var fontSizeVal: Double
     
     let daySecond = 24 * 60 * 60 * 1.0
-    private let timer = Timer.publish(every: 1, on: .current, in: .common).autoconnect()
+    private let timer = Timer.publish(every: 0.1, on: .current, in: .common).autoconnect()
     
     var body: some View {
         VStack {
@@ -44,7 +44,7 @@ struct ClockView: View {
                         .font(.largeTitle)
                 }
             }
-            // 1秒に1回現在時刻を確認
+            // 0.1秒に1回現在時刻を確認
             .onReceive(timer){ _ in
                 self.nowHour = Calendar.current.component(.hour, from: Date())
                 self.nowMinute = Calendar.current.component(.minute, from: Date())

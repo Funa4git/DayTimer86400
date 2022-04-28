@@ -101,7 +101,7 @@ struct StopwatchView: View {
                 
                 Spacer()
             }
-            // 1秒に1回現在時刻を確認
+            // 0.1秒に1回現在時刻を確認
             .onReceive(timer){ _ in
                 if isStopwatchRunning {
                     viewSecond = fetchCount()
