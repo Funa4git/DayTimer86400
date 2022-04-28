@@ -54,6 +54,7 @@ struct StopwatchView: View {
                 
                 Text(String(format:"%.0f", viewSecond))
                     .font(.custom("Futura", size: 50))
+                    .foregroundColor(Color.textColor)
                 
                 Spacer()
                 
