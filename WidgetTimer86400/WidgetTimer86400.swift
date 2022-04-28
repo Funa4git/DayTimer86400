@@ -64,8 +64,7 @@ struct WidgetTimer86400EntryView : View {
             
             Color.black
                 .frame(width: .infinity, height: entry.displaySize.height*(1-(entry.lastSecond/(24*60*60))))
-//                .position(x: entry.displaySize.width/2, y: entry.displaySize.height*(1-(entry.lastSecond/(24*60*60)))/2)
-                .position(x: entry.displaySize.width/2, y: entry.displaySize.height*(1-1)/2)
+                .position(x: entry.displaySize.width/2, y: entry.displaySize.height*(1-(entry.lastSecond/(24*60*60)))/2)
             
             VStack {
                 Spacer()
