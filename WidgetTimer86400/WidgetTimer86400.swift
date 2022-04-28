@@ -62,9 +62,10 @@ struct WidgetTimer86400EntryView : View {
         ZStack {
             Color.textColor
             
-            Color.white
+            Color.black
                 .frame(width: .infinity, height: entry.displaySize.height*(1-(entry.lastSecond/(24*60*60))))
-                .position(x: entry.displaySize.width/2, y: entry.displaySize.height*(1-(entry.lastSecond/(24*60*60)))/2)
+//                .position(x: entry.displaySize.width/2, y: entry.displaySize.height*(1-(entry.lastSecond/(24*60*60)))/2)
+                .position(x: entry.displaySize.width/2, y: entry.displaySize.height*(1-1)/2)
             
             VStack {
                 Spacer()
@@ -79,7 +80,7 @@ struct WidgetTimer86400EntryView : View {
                 
                 Spacer()
             }
-            .foregroundColor(Color.black)
+            .foregroundColor(Color.white)
         }
     }
 }
