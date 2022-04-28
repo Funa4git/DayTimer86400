@@ -9,19 +9,31 @@
 import SwiftUI
 
 struct StopwatchView: View {
+    @State var nowDate = Date()
+    let timer = Timer.publish(every: 1, on: .current, in: .common).autoconnect()
+    
     var body: some View {
         ZStack {
             Color.backgroundColor
                 .edgesIgnoringSafeArea(.all)
             
             VStack {
+                Spacer()
+                
+                Text(String(format:"%.0f", 11.25))
+                        .font(.custom("Futura", size: 50))
+                
+                
+                Spacer()
+                
                 HStack {
                     Spacer()
                     Button(action: {
-                        // Do something
+                        
                     }) {
                         Text("Start")
-                            .frame(width: 60, height: 60)
+                            .font(.title)
+                            .frame(width: 100, height: 100)
                             .imageScale(.large)
                             .background(Color.green)
                             .foregroundColor(.white)
@@ -29,10 +41,11 @@ struct StopwatchView: View {
                     }
                     Spacer()
                     Button(action: {
-                        // Do something
+                        
                     }) {
                         Text("Stop")
-                            .frame(width: 60, height: 60)
+                            .font(.title)
+                            .frame(width: 100, height: 100)
                             .imageScale(.large)
                             .background(Color.red)
                             .foregroundColor(.white)
@@ -40,6 +53,12 @@ struct StopwatchView: View {
                     }
                     Spacer()
                 }
+                
+                Spacer()
+            }
+            // 1秒に1回現在時刻を確認
+            .onReceive(timer){ _ in
+                
             }
         }
     }
