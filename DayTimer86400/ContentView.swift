@@ -47,7 +47,7 @@ struct ContentView: View {
             })
             
             NavigationView {
-                StopwatchView()
+                StopwatchView(isChangeFontSize: $isChangeFontSize, fontSizeVal: $fontSizeVal)
             }
             .navigationViewStyle(.stack)
             .tabItem({
@@ -56,7 +56,7 @@ struct ContentView: View {
             })
             
             NavigationView {
-                TimerView()
+                TimerView(isChangeFontSize: $isChangeFontSize, fontSizeVal: $fontSizeVal)
             }
             .navigationViewStyle(.stack)
             .tabItem({

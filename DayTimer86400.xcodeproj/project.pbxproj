@@ -13,6 +13,7 @@
 		94567D1D280FF95D00F5849C /* WidgetTimer86400.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94567D1C280FF95D00F5849C /* WidgetTimer86400.swift */; };
 		94567D20280FF96000F5849C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94567D1F280FF96000F5849C /* Assets.xcassets */; };
 		94567D26280FF96000F5849C /* WidgetTimer86400Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 94567D15280FF95C00F5849C /* WidgetTimer86400Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		94AA90D8281AD48C00EEE4C3 /* extensionDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E6EF302811506100735DA2 /* extensionDate.swift */; };
 		94C2D1E4280AB2A300944E87 /* DayTimer86400App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C2D1E3280AB2A300944E87 /* DayTimer86400App.swift */; };
 		94C2D1E6280AB2A300944E87 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C2D1E5280AB2A300944E87 /* ContentView.swift */; };
 		94C2D1E8280AB2A600944E87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94C2D1E7280AB2A600944E87 /* Assets.xcassets */; };
@@ -274,6 +275,7 @@
 				94E6EF33281165AF00735DA2 /* WidgetTimer86400.intentdefinition in Sources */,
 				94C2D1E6280AB2A300944E87 /* ContentView.swift in Sources */,
 				94C2D1E4280AB2A300944E87 /* DayTimer86400App.swift in Sources */,
+				94AA90D8281AD48C00EEE4C3 /* extensionDate.swift in Sources */,
 				94F055712819DE2600BDBEF4 /* extensionAppStorage.swift in Sources */,
 				94F05573281A7FFE00BDBEF4 /* TimerView.swift in Sources */,
 				94F0556D2819357400BDBEF4 /* StopwatchView.swift in Sources */,
@@ -486,12 +488,12 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DayTimer86400/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = 86400;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -519,12 +521,12 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DayTimer86400/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = 86400;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
