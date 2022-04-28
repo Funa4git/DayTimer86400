@@ -23,6 +23,7 @@
 		94E6EF34281165AF00735DA2 /* WidgetTimer86400.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 94E6EF36281165AF00735DA2 /* WidgetTimer86400.intentdefinition */; };
 		94F0556D2819357400BDBEF4 /* StopwatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F0556C2819357400BDBEF4 /* StopwatchView.swift */; };
 		94F055712819DE2600BDBEF4 /* extensionAppStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F055702819DE2600BDBEF4 /* extensionAppStorage.swift */; };
+		94F05573281A7FFE00BDBEF4 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F05572281A7FFE00BDBEF4 /* TimerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		94E6EF35281165AF00735DA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; name = Base; path = Base.lproj/WidgetTimer86400.intentdefinition; sourceTree = "<group>"; };
 		94F0556C2819357400BDBEF4 /* StopwatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchView.swift; sourceTree = "<group>"; };
 		94F055702819DE2600BDBEF4 /* extensionAppStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionAppStorage.swift; sourceTree = "<group>"; };
+		94F05572281A7FFE00BDBEF4 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 				94C2D1E5280AB2A300944E87 /* ContentView.swift */,
 				94C2D1F1280AB37600944E87 /* ClockView.swift */,
 				94F0556C2819357400BDBEF4 /* StopwatchView.swift */,
+				94F05572281A7FFE00BDBEF4 /* TimerView.swift */,
 				94567D0F280AE36400F5849C /* SettingView.swift */,
 				94F055702819DE2600BDBEF4 /* extensionAppStorage.swift */,
 				94C2D1E7280AB2A600944E87 /* Assets.xcassets */,
@@ -272,6 +275,7 @@
 				94C2D1E6280AB2A300944E87 /* ContentView.swift in Sources */,
 				94C2D1E4280AB2A300944E87 /* DayTimer86400App.swift in Sources */,
 				94F055712819DE2600BDBEF4 /* extensionAppStorage.swift in Sources */,
+				94F05573281A7FFE00BDBEF4 /* TimerView.swift in Sources */,
 				94F0556D2819357400BDBEF4 /* StopwatchView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

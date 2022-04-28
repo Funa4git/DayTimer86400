@@ -56,7 +56,7 @@ struct ContentView: View {
             })
             
             NavigationView {
-                
+                TimerView()
             }
             .navigationViewStyle(.stack)
             .tabItem({
