@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct TimerView: View {
+struct ClockView: View {
     @State var nowHour = Calendar.current.component(.hour, from: Date())
     @State var nowMinute = Calendar.current.component(.minute, from: Date())
     @State var nowSecond = Calendar.current.component(.second, from: Date())
@@ -109,9 +109,9 @@ struct TimerView: View {
 
 
 
-struct TimerView_Previews: PreviewProvider {
+struct ClockView_Previews: PreviewProvider {
     static var previews: some View {
-        TimerView(isCenterText: .constant(false), isChangeFontSize: .constant(false), fontSizeVal: .constant(40.0))
+        ClockView(isCenterText: .constant(false), isChangeFontSize: .constant(false), fontSizeVal: .constant(40.0))
     }
 }
 
