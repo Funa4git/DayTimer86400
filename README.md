@@ -28,3 +28,5 @@ The following functions will be supported sequentially in the future.
 ## Author
 - Based on a story by IJK単位系.
 - The code was written by Funa.
+## Apple Store
+<https://apps.apple.com/jp/app/86400/id1619774988>
