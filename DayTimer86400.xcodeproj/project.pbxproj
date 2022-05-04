@@ -31,7 +31,7 @@
 		94EA120E2822B8C20096E1AD /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EA120D2822B8C20096E1AD /* ComplicationController.swift */; };
 		94EA12102822B8C30096E1AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94EA120F2822B8C30096E1AD /* Assets.xcassets */; };
 		94EA12132822B8C30096E1AD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94EA12122822B8C30096E1AD /* Preview Assets.xcassets */; };
-		94EA12182822B8C40096E1AD /* WatchTimer86400.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 94EA11F82822B8B80096E1AD /* WatchTimer86400.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		94EA12182822B8C40096E1AD /* 86400.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 94EA11F82822B8B80096E1AD /* 86400.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		94EA12212822C5760096E1AD /* extensionDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E6EF302811506100735DA2 /* extensionDate.swift */; };
 		94F0556D2819357400BDBEF4 /* StopwatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F0556C2819357400BDBEF4 /* StopwatchView.swift */; };
 		94F055712819DE2600BDBEF4 /* extensionAppStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F055702819DE2600BDBEF4 /* extensionAppStorage.swift */; };
@@ -80,7 +80,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				94EA12182822B8C40096E1AD /* WatchTimer86400.app in Embed Watch Content */,
+				94EA12182822B8C40096E1AD /* 86400.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -115,7 +115,7 @@
 		94C2D1F3280ABC7B00944E87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		94E6EF302811506100735DA2 /* extensionDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionDate.swift; sourceTree = "<group>"; };
 		94E6EF35281165AF00735DA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; name = Base; path = Base.lproj/WidgetTimer86400.intentdefinition; sourceTree = "<group>"; };
-		94EA11F82822B8B80096E1AD /* WatchTimer86400.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchTimer86400.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		94EA11F82822B8B80096E1AD /* 86400.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 86400.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94EA11FA2822B8C10096E1AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94EA12002822B8C20096E1AD /* WatchTimer86400 WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchTimer86400 WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94EA12052822B8C20096E1AD /* DayTimer86400App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayTimer86400App.swift; sourceTree = "<group>"; };
@@ -198,7 +198,7 @@
 			children = (
 				94C2D1E0280AB2A300944E87 /* DayTimer86400.app */,
 				94567D15280FF95C00F5849C /* WidgetTimer86400Extension.appex */,
-				94EA11F82822B8B80096E1AD /* WatchTimer86400.app */,
+				94EA11F82822B8B80096E1AD /* 86400.app */,
 				94EA12002822B8C20096E1AD /* WatchTimer86400 WatchKit Extension.appex */,
 			);
 			name = Products;
@@ -316,7 +316,7 @@
 			);
 			name = WatchTimer86400;
 			productName = WatchTimer86400;
-			productReference = 94EA11F82822B8B80096E1AD /* WatchTimer86400.app */;
+			productReference = 94EA11F82822B8B80096E1AD /* 86400.app */;
 			productType = "com.apple.product-type.application.watchapp2";
 		};
 		94EA11FF2822B8C20096E1AD /* WatchTimer86400 WatchKit Extension */ = {
@@ -508,7 +508,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.1.0;
+				MARKETING_VERSION = 2.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = SuzuSoftware.DayTimer86400.WidgetTimer86400;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -536,7 +536,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.1.0;
+				MARKETING_VERSION = 2.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = SuzuSoftware.DayTimer86400.WidgetTimer86400;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -684,7 +684,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.0;
+				MARKETING_VERSION = 2.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = SuzuSoftware.DayTimer86400;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -717,7 +717,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.0;
+				MARKETING_VERSION = 2.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = SuzuSoftware.DayTimer86400;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -737,12 +737,11 @@
 				DEVELOPMENT_TEAM = VK3Y2B9G25;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = WatchTimer86400_WatchKit_Extension;
-				INFOPLIST_KEY_CFBundleDisplayName = WatchTimer86400;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = SuzuSoftware.DayTimer86400;
-				MARKETING_VERSION = 1.1.0;
+				MARKETING_VERSION = 2.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = SuzuSoftware.DayTimer86400.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = 86400;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -763,12 +762,11 @@
 				DEVELOPMENT_TEAM = VK3Y2B9G25;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = WatchTimer86400_WatchKit_Extension;
-				INFOPLIST_KEY_CFBundleDisplayName = WatchTimer86400;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = SuzuSoftware.DayTimer86400;
-				MARKETING_VERSION = 1.1.0;
+				MARKETING_VERSION = 2.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = SuzuSoftware.DayTimer86400.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = 86400;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -789,7 +787,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "WatchTimer86400 WatchKit Extension/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "WatchTimer86400 WatchKit Extension";
+				INFOPLIST_KEY_CFBundleDisplayName = 86400;
 				INFOPLIST_KEY_CLKComplicationPrincipalClass = WatchTimer86400_WatchKit_Extension.ComplicationController;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -797,7 +795,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.1.0;
+				MARKETING_VERSION = 2.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = SuzuSoftware.DayTimer86400.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
@@ -820,7 +818,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "WatchTimer86400 WatchKit Extension/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "WatchTimer86400 WatchKit Extension";
+				INFOPLIST_KEY_CFBundleDisplayName = 86400;
 				INFOPLIST_KEY_CLKComplicationPrincipalClass = WatchTimer86400_WatchKit_Extension.ComplicationController;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -828,7 +826,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.1.0;
+				MARKETING_VERSION = 2.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = SuzuSoftware.DayTimer86400.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
