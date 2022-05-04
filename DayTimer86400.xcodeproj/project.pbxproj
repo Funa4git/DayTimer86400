@@ -32,6 +32,7 @@
 		94EA12102822B8C30096E1AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94EA120F2822B8C30096E1AD /* Assets.xcassets */; };
 		94EA12132822B8C30096E1AD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94EA12122822B8C30096E1AD /* Preview Assets.xcassets */; };
 		94EA12182822B8C40096E1AD /* WatchTimer86400.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 94EA11F82822B8B80096E1AD /* WatchTimer86400.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		94EA12212822C5760096E1AD /* extensionDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E6EF302811506100735DA2 /* extensionDate.swift */; };
 		94F0556D2819357400BDBEF4 /* StopwatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F0556C2819357400BDBEF4 /* StopwatchView.swift */; };
 		94F055712819DE2600BDBEF4 /* extensionAppStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F055702819DE2600BDBEF4 /* extensionAppStorage.swift */; };
 		94F05573281A7FFE00BDBEF4 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F05572281A7FFE00BDBEF4 /* TimerView.swift */; };
@@ -453,6 +454,7 @@
 				94EA120E2822B8C20096E1AD /* ComplicationController.swift in Sources */,
 				94EA12062822B8C20096E1AD /* DayTimer86400App.swift in Sources */,
 				94EA120C2822B8C20096E1AD /* NotificationView.swift in Sources */,
+				94EA12212822C5760096E1AD /* extensionDate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,7 +508,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = SuzuSoftware.DayTimer86400.WidgetTimer86400;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -534,7 +536,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = SuzuSoftware.DayTimer86400.WidgetTimer86400;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -682,7 +684,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = SuzuSoftware.DayTimer86400;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -715,7 +717,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = SuzuSoftware.DayTimer86400;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -738,7 +740,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = WatchTimer86400;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = SuzuSoftware.DayTimer86400;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = SuzuSoftware.DayTimer86400.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -746,7 +748,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
 			};
 			name = Debug;
 		};
@@ -764,7 +766,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = WatchTimer86400;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = SuzuSoftware.DayTimer86400;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = SuzuSoftware.DayTimer86400.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -772,7 +774,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
 			};
 			name = Release;
 		};
@@ -788,14 +790,14 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "WatchTimer86400 WatchKit Extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "WatchTimer86400 WatchKit Extension";
-				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = WatchTimer86400_WatchKit_Extension.ComplicationController;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = SuzuSoftware.DayTimer86400.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
@@ -803,7 +805,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
 			};
 			name = Debug;
 		};
@@ -819,14 +821,14 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "WatchTimer86400 WatchKit Extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "WatchTimer86400 WatchKit Extension";
-				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = WatchTimer86400_WatchKit_Extension.ComplicationController;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = SuzuSoftware.DayTimer86400.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
@@ -834,7 +836,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
 			};
 			name = Release;
 		};
