@@ -22,6 +22,17 @@
 		94E6EF312811506200735DA2 /* extensionDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E6EF302811506100735DA2 /* extensionDate.swift */; };
 		94E6EF33281165AF00735DA2 /* WidgetTimer86400.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 94E6EF36281165AF00735DA2 /* WidgetTimer86400.intentdefinition */; };
 		94E6EF34281165AF00735DA2 /* WidgetTimer86400.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 94E6EF36281165AF00735DA2 /* WidgetTimer86400.intentdefinition */; };
+		94EA11FB2822B8C10096E1AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94EA11FA2822B8C10096E1AD /* Assets.xcassets */; };
+		94EA12012822B8C20096E1AD /* WatchTimer86400 WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 94EA12002822B8C20096E1AD /* WatchTimer86400 WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		94EA12062822B8C20096E1AD /* DayTimer86400App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EA12052822B8C20096E1AD /* DayTimer86400App.swift */; };
+		94EA12082822B8C20096E1AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EA12072822B8C20096E1AD /* ContentView.swift */; };
+		94EA120A2822B8C20096E1AD /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EA12092822B8C20096E1AD /* NotificationController.swift */; };
+		94EA120C2822B8C20096E1AD /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EA120B2822B8C20096E1AD /* NotificationView.swift */; };
+		94EA120E2822B8C20096E1AD /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EA120D2822B8C20096E1AD /* ComplicationController.swift */; };
+		94EA12102822B8C30096E1AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94EA120F2822B8C30096E1AD /* Assets.xcassets */; };
+		94EA12132822B8C30096E1AD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94EA12122822B8C30096E1AD /* Preview Assets.xcassets */; };
+		94EA12182822B8C40096E1AD /* 86400.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 94EA11F82822B8B80096E1AD /* 86400.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		94EA12212822C5760096E1AD /* extensionDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E6EF302811506100735DA2 /* extensionDate.swift */; };
 		94F0556D2819357400BDBEF4 /* StopwatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F0556C2819357400BDBEF4 /* StopwatchView.swift */; };
 		94F055712819DE2600BDBEF4 /* extensionAppStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F055702819DE2600BDBEF4 /* extensionAppStorage.swift */; };
 		94F05573281A7FFE00BDBEF4 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F05572281A7FFE00BDBEF4 /* TimerView.swift */; };
@@ -35,6 +46,20 @@
 			remoteGlobalIDString = 94567D14280FF95C00F5849C;
 			remoteInfo = WidgetTimer86400Extension;
 		};
+		94EA12022822B8C20096E1AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94C2D1D8280AB2A300944E87 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94EA11FF2822B8C20096E1AD;
+			remoteInfo = "WatchTimer86400 WatchKit Extension";
+		};
+		94EA12162822B8C40096E1AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94C2D1D8280AB2A300944E87 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94EA11F72822B8B80096E1AD;
+			remoteInfo = WatchTimer86400;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,6 +70,28 @@
 			dstSubfolderSpec = 13;
 			files = (
 				94567D26280FF96000F5849C /* WidgetTimer86400Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94EA12192822B8C40096E1AD /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				94EA12182822B8C40096E1AD /* 86400.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94EA121C2822B8C40096E1AD /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				94EA12012822B8C20096E1AD /* WatchTimer86400 WatchKit Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -68,6 +115,18 @@
 		94C2D1F3280ABC7B00944E87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		94E6EF302811506100735DA2 /* extensionDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionDate.swift; sourceTree = "<group>"; };
 		94E6EF35281165AF00735DA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; name = Base; path = Base.lproj/WidgetTimer86400.intentdefinition; sourceTree = "<group>"; };
+		94EA11F82822B8B80096E1AD /* 86400.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 86400.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		94EA11FA2822B8C10096E1AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		94EA12002822B8C20096E1AD /* WatchTimer86400 WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchTimer86400 WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		94EA12052822B8C20096E1AD /* DayTimer86400App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayTimer86400App.swift; sourceTree = "<group>"; };
+		94EA12072822B8C20096E1AD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		94EA12092822B8C20096E1AD /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		94EA120B2822B8C20096E1AD /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		94EA120D2822B8C20096E1AD /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		94EA120F2822B8C30096E1AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		94EA12122822B8C30096E1AD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		94EA12142822B8C40096E1AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94EA12152822B8C40096E1AD /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		94F0556C2819357400BDBEF4 /* StopwatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchView.swift; sourceTree = "<group>"; };
 		94F055702819DE2600BDBEF4 /* extensionAppStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionAppStorage.swift; sourceTree = "<group>"; };
 		94F05572281A7FFE00BDBEF4 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
@@ -84,6 +143,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		94C2D1DD280AB2A300944E87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94EA11FD2822B8C20096E1AD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -120,6 +186,8 @@
 			children = (
 				94C2D1E2280AB2A300944E87 /* DayTimer86400 */,
 				94567D1B280FF95D00F5849C /* WidgetTimer86400 */,
+				94EA11F92822B8B90096E1AD /* WatchTimer86400 */,
+				94EA12042822B8C20096E1AD /* WatchTimer86400 WatchKit Extension */,
 				94567D16280FF95C00F5849C /* Frameworks */,
 				94C2D1E1280AB2A300944E87 /* Products */,
 			);
@@ -130,6 +198,8 @@
 			children = (
 				94C2D1E0280AB2A300944E87 /* DayTimer86400.app */,
 				94567D15280FF95C00F5849C /* WidgetTimer86400Extension.appex */,
+				94EA11F82822B8B80096E1AD /* 86400.app */,
+				94EA12002822B8C20096E1AD /* WatchTimer86400 WatchKit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -155,6 +225,38 @@
 			isa = PBXGroup;
 			children = (
 				94C2D1EA280AB2A600944E87 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		94EA11F92822B8B90096E1AD /* WatchTimer86400 */ = {
+			isa = PBXGroup;
+			children = (
+				94EA11FA2822B8C10096E1AD /* Assets.xcassets */,
+			);
+			path = WatchTimer86400;
+			sourceTree = "<group>";
+		};
+		94EA12042822B8C20096E1AD /* WatchTimer86400 WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				94EA12052822B8C20096E1AD /* DayTimer86400App.swift */,
+				94EA12072822B8C20096E1AD /* ContentView.swift */,
+				94EA12092822B8C20096E1AD /* NotificationController.swift */,
+				94EA120B2822B8C20096E1AD /* NotificationView.swift */,
+				94EA120D2822B8C20096E1AD /* ComplicationController.swift */,
+				94EA120F2822B8C30096E1AD /* Assets.xcassets */,
+				94EA12142822B8C40096E1AD /* Info.plist */,
+				94EA12152822B8C40096E1AD /* PushNotificationPayload.apns */,
+				94EA12112822B8C30096E1AD /* Preview Content */,
+			);
+			path = "WatchTimer86400 WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		94EA12112822B8C30096E1AD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				94EA12122822B8C30096E1AD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -187,16 +289,52 @@
 				94C2D1DD280AB2A300944E87 /* Frameworks */,
 				94C2D1DE280AB2A300944E87 /* Resources */,
 				94567D27280FF96000F5849C /* Embed App Extensions */,
+				94EA12192822B8C40096E1AD /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				94567D25280FF96000F5849C /* PBXTargetDependency */,
+				94EA12172822B8C40096E1AD /* PBXTargetDependency */,
 			);
 			name = DayTimer86400;
 			productName = DayTimer86400;
 			productReference = 94C2D1E0280AB2A300944E87 /* DayTimer86400.app */;
 			productType = "com.apple.product-type.application";
+		};
+		94EA11F72822B8B80096E1AD /* WatchTimer86400 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94EA12202822B8C40096E1AD /* Build configuration list for PBXNativeTarget "WatchTimer86400" */;
+			buildPhases = (
+				94EA11F62822B8B80096E1AD /* Resources */,
+				94EA121C2822B8C40096E1AD /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94EA12032822B8C20096E1AD /* PBXTargetDependency */,
+			);
+			name = WatchTimer86400;
+			productName = WatchTimer86400;
+			productReference = 94EA11F82822B8B80096E1AD /* 86400.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		94EA11FF2822B8C20096E1AD /* WatchTimer86400 WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94EA121F2822B8C40096E1AD /* Build configuration list for PBXNativeTarget "WatchTimer86400 WatchKit Extension" */;
+			buildPhases = (
+				94EA11FC2822B8C20096E1AD /* Sources */,
+				94EA11FD2822B8C20096E1AD /* Frameworks */,
+				94EA11FE2822B8C20096E1AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchTimer86400 WatchKit Extension";
+			productName = "WatchTimer86400 WatchKit Extension";
+			productReference = 94EA12002822B8C20096E1AD /* WatchTimer86400 WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -212,6 +350,12 @@
 						CreatedOnToolsVersion = 13.3.1;
 					};
 					94C2D1DF280AB2A300944E87 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					94EA11F72822B8B80096E1AD = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					94EA11FF2822B8C20096E1AD = {
 						CreatedOnToolsVersion = 13.3.1;
 					};
 				};
@@ -231,6 +375,8 @@
 			targets = (
 				94C2D1DF280AB2A300944E87 /* DayTimer86400 */,
 				94567D14280FF95C00F5849C /* WidgetTimer86400Extension */,
+				94EA11F72822B8B80096E1AD /* WatchTimer86400 */,
+				94EA11FF2822B8C20096E1AD /* WatchTimer86400 WatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -250,6 +396,23 @@
 			files = (
 				94C2D1EB280AB2A600944E87 /* Preview Assets.xcassets in Resources */,
 				94C2D1E8280AB2A600944E87 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94EA11F62822B8B80096E1AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94EA11FB2822B8C10096E1AD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94EA11FE2822B8C20096E1AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94EA12132822B8C30096E1AD /* Preview Assets.xcassets in Resources */,
+				94EA12102822B8C30096E1AD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +445,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		94EA11FC2822B8C20096E1AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94EA120A2822B8C20096E1AD /* NotificationController.swift in Sources */,
+				94EA12082822B8C20096E1AD /* ContentView.swift in Sources */,
+				94EA120E2822B8C20096E1AD /* ComplicationController.swift in Sources */,
+				94EA12062822B8C20096E1AD /* DayTimer86400App.swift in Sources */,
+				94EA120C2822B8C20096E1AD /* NotificationView.swift in Sources */,
+				94EA12212822C5760096E1AD /* extensionDate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -289,6 +465,16 @@
 			isa = PBXTargetDependency;
 			target = 94567D14280FF95C00F5849C /* WidgetTimer86400Extension */;
 			targetProxy = 94567D24280FF96000F5849C /* PBXContainerItemProxy */;
+		};
+		94EA12032822B8C20096E1AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94EA11FF2822B8C20096E1AD /* WatchTimer86400 WatchKit Extension */;
+			targetProxy = 94EA12022822B8C20096E1AD /* PBXContainerItemProxy */;
+		};
+		94EA12172822B8C40096E1AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94EA11F72822B8B80096E1AD /* WatchTimer86400 */;
+			targetProxy = 94EA12162822B8C40096E1AD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -322,7 +508,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 2.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = SuzuSoftware.DayTimer86400.WidgetTimer86400;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -350,7 +536,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 2.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = SuzuSoftware.DayTimer86400.WidgetTimer86400;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -498,7 +684,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 2.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = SuzuSoftware.DayTimer86400;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -531,12 +717,124 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 2.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = SuzuSoftware.DayTimer86400;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		94EA121A2822B8C40096E1AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VK3Y2B9G25;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = WatchTimer86400_WatchKit_Extension;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = SuzuSoftware.DayTimer86400;
+				MARKETING_VERSION = 2.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SuzuSoftware.DayTimer86400.watchkitapp;
+				PRODUCT_NAME = 86400;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		94EA121B2822B8C40096E1AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VK3Y2B9G25;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = WatchTimer86400_WatchKit_Extension;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = SuzuSoftware.DayTimer86400;
+				MARKETING_VERSION = 2.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SuzuSoftware.DayTimer86400.watchkitapp;
+				PRODUCT_NAME = 86400;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		94EA121D2822B8C40096E1AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchTimer86400 WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = VK3Y2B9G25;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WatchTimer86400 WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = 86400;
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = WatchTimer86400_WatchKit_Extension.ComplicationController;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 2.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SuzuSoftware.DayTimer86400.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		94EA121E2822B8C40096E1AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchTimer86400 WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = VK3Y2B9G25;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WatchTimer86400 WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = 86400;
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = WatchTimer86400_WatchKit_Extension.ComplicationController;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 2.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SuzuSoftware.DayTimer86400.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
 			};
 			name = Release;
 		};
@@ -566,6 +864,24 @@
 			buildConfigurations = (
 				94C2D1EF280AB2A600944E87 /* Debug */,
 				94C2D1F0280AB2A600944E87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94EA121F2822B8C40096E1AD /* Build configuration list for PBXNativeTarget "WatchTimer86400 WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94EA121D2822B8C40096E1AD /* Debug */,
+				94EA121E2822B8C40096E1AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94EA12202822B8C40096E1AD /* Build configuration list for PBXNativeTarget "WatchTimer86400" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94EA121A2822B8C40096E1AD /* Debug */,
+				94EA121B2822B8C40096E1AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
