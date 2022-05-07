@@ -13,7 +13,7 @@ This application for iOS and iPad OS aims to make people aware that a day is 86,
 ## Features
 This application supports the Widget function.
 ## Requirement
-This application is available since iOS 14.0, iPadOS 14.0.
+This application is available since iOS 14.0, iPadOS 14.0, watchOS 8.0.
 ## Language
 - Japanese
 ## Note
@@ -21,11 +21,9 @@ The following functions will be supported sequentially in the future.
 - Increase the variety of widget colors.
 - Allow widget update requests to be made from the application side as well.
 - Add widget setting screen.
-- Support widgets of other sizes.
 - Update widget more frequently.
 - Time signal by push notification.
 - Simple view mode.
-- watchOS Support.
 - App Clip Support.
 - Mac computers with Apple silicon Support.
 - macOS Support.
