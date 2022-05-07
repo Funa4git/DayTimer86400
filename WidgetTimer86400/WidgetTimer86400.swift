@@ -56,10 +56,124 @@ extension Color {
 }
 
 struct WidgetTimer86400EntryView : View {
+    @Environment(\.widgetFamily) var family: WidgetFamily
     var entry: Provider.Entry
     
     var body: some View {
-        ZStack {
+        switch family {
+        case .systemSmall:
+            smallView()
+        case .systemMedium:
+            mediumView()
+        case .systemLarge:
+            largeView()
+        case .systemExtraLarge:
+            extraLargeView()
+        default:
+            smallView()
+        }
+    }
+    
+    
+    func smallView() -> some View {
+            return ZStack {
+                Color.textColor
+                
+                Color.black
+                    .frame(width: .infinity, height: entry.displaySize.height*(1-(entry.lastSecond/(24*60*60))))
+                    .position(x: entry.displaySize.width/2, y: entry.displaySize.height*(1-(entry.lastSecond/(24*60*60)))/2)
+                
+                VStack {
+                    Spacer()
+                    
+                    Text("本日残り")
+                        .font(.system(.largeTitle, design: .serif))
+                        .fontWeight(.bold)
+                    
+                    Text("\(entry.lastSecond / (24 * 60 * 60) * 100, specifier: "%.0f") %")
+                        .font(.system(.largeTitle, design: .serif))
+                        .fontWeight(.bold)
+                    
+                    Spacer()
+                }
+                .foregroundColor(Color.white)
+            }
+    }
+    
+    func mediumView() -> some View {
+            return ZStack {
+                Color.textColor
+                
+                Color.black
+                    .frame(width: .infinity, height: entry.displaySize.height*(1-(entry.lastSecond/(24*60*60))))
+                    .position(x: entry.displaySize.width/2, y: entry.displaySize.height*(1-(entry.lastSecond/(24*60*60)))/2)
+                
+                VStack {
+                    Spacer()
+                    
+                    HStack {
+                        Spacer()
+                        
+                        VStack {
+                            Text("Today's")
+                                .font(.system(.title2, design: .serif))
+                                .fontWeight(.bold)
+                            
+                            Text("")
+                            
+                            Text("Remaining")
+                                .font(.system(.title2, design: .serif))
+                                .fontWeight(.bold)
+                        }
+                        
+                        Spacer()
+                        
+                        Text("\(entry.lastSecond / (24 * 60 * 60) * 100, specifier: "%.0f") %")
+                            .font(.system(size: 45, weight: .bold, design: .serif))
+                        
+                        Spacer()
+                    }
+                    
+                    Spacer()
+                }
+                .foregroundColor(Color.white)
+            }
+    }
+    
+    func largeView() -> some View {
+            return ZStack {
+                Color.textColor
+                
+                Color.black
+                    .frame(width: .infinity, height: entry.displaySize.height*(1-(entry.lastSecond/(24*60*60))))
+                    .position(x: entry.displaySize.width/2, y: entry.displaySize.height*(1-(entry.lastSecond/(24*60*60)))/2)
+                
+                VStack {
+                    Spacer()
+                    
+                    Text("Today's")
+                        .font(.system(size: 45, weight: .bold, design: .serif))
+                        .fontWeight(.bold)
+                    
+                    Text("")
+                    
+                    Text("Remaining")
+                        .font(.system(size: 45, weight: .bold, design: .serif))
+                        .fontWeight(.bold)
+                    
+                    Text("")
+                    
+                    Text("\(entry.lastSecond / (24 * 60 * 60) * 100, specifier: "%.0f") %")
+                        .font(.system(size: 60, weight: .bold, design: .serif))
+                    
+                    Spacer()
+                }
+                .foregroundColor(Color.white)
+            }
+    }
+    
+    func extraLargeView() -> some View {
+        return ZStack {
             Color.textColor
             
             Color.black
@@ -69,13 +183,28 @@ struct WidgetTimer86400EntryView : View {
             VStack {
                 Spacer()
                 
-                Text("本日残り")
-                    .font(.system(.largeTitle, design: .serif))
-                    .fontWeight(.bold)
-                
-                Text("\(entry.lastSecond / (24 * 60 * 60) * 100, specifier: "%.0f") %")
-                    .font(.system(.largeTitle, design: .serif))
-                    .fontWeight(.bold)
+                HStack {
+                    Spacer()
+                    
+                    VStack {
+                        Text("Today's")
+                            .font(.system(size: 55, weight: .bold, design: .serif))
+                            .fontWeight(.bold)
+                        
+                        Text("")
+                        
+                        Text("Remaining")
+                            .font(.system(size: 55, weight: .bold, design: .serif))
+                            .fontWeight(.bold)
+                    }
+                    
+                    Spacer()
+                    
+                    Text("\(entry.lastSecond / (24 * 60 * 60) * 100, specifier: "%.0f") %")
+                        .font(.system(size: 70, weight: .bold, design: .serif))
+                    
+                    Spacer()
+                }
                 
                 Spacer()
             }
@@ -83,6 +212,7 @@ struct WidgetTimer86400EntryView : View {
         }
     }
 }
+
 
 
 @main
@@ -96,13 +226,12 @@ struct WidgetTimer86400: Widget {
         }
         .configurationDisplayName("86400")
         .description("One day is 86400 seconds.")
-        .supportedFamilies([.systemSmall])
     }
 }
 
 struct WidgetTimer86400_Previews: PreviewProvider {
     static var previews: some View {
         WidgetTimer86400EntryView(entry: SimpleEntry(date: Date(), currentSecond: 0.0, lastSecond: 24 * 60 * 60.0, configuration: ConfigurationIntent(), displaySize: CGSize(width: 180, height: 180)))
-            .previewContext(WidgetPreviewContext(family: .systemSmall))
+            .previewContext(WidgetPreviewContext(family: .systemLarge))
     }
 }
