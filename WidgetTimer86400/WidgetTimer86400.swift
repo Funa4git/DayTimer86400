@@ -16,7 +16,11 @@ struct Provider: IntentTimelineProvider {
     }
     
     func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (SimpleEntry) -> ()) {
-        let entry = SimpleEntry(date: Date(), currentSecond: 0.0, lastSecond: 24 * 60 * 60.0, configuration: configuration, displaySize: context.displaySize)
+        let snapDate = Date()
+        let snapCurrentSecond = Double((snapDate.hour * 60 * 60) + (snapDate.minute * 60) + 0)
+        let snapLastSecond = Double(24 * 60 * 60 - snapCurrentSecond)
+        
+        let entry = SimpleEntry(date: Date(), currentSecond: snapCurrentSecond, lastSecond: snapLastSecond, configuration: configuration, displaySize: context.displaySize)
         completion(entry)
     }
     
