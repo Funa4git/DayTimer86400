@@ -17,7 +17,7 @@ struct ContentView: View {
     @State private var nowDate = Date()
     @State private var currentSecond = 0.0
     @State private var lastSecond = 0.0
-    private let timer = Timer.publish(every: 0.1, on: .current, in: .common).autoconnect()
+    private let timer = Timer.publish(every: 1, on: .current, in: .common).autoconnect()
     
     func refreshCounter() {
         nowDate = Date()
@@ -54,7 +54,7 @@ struct ContentView: View {
                 .font(.title2)
         }
         .foregroundColor(Color.textColor)
-        // 0.1秒に1回現在時刻を確認
+        // 1秒に1回現在時刻を確認
         .onReceive(timer){ _ in
             refreshCounter()
         }
