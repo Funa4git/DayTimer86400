@@ -35,7 +35,8 @@ struct ContentView: View {
                 Spacer()
             }
             Text("\(currentSecond, specifier: "%.0f") sec")
-                .font(.title2)
+                .font(.system(size: 24, design: .monospaced))
+            
             HStack {
                 Text("last day time")
                     .fontWeight(.thin)
@@ -43,7 +44,8 @@ struct ContentView: View {
                 Spacer()
             }
             Text("\(lastSecond, specifier: "%.0f") sec")
-                .font(.title2)
+                .font(.system(size: 24, design: .monospaced))
+            
             HStack {
                 Text("view of %")
                     .fontWeight(.thin)
@@ -51,7 +53,7 @@ struct ContentView: View {
                 Spacer()
             }
             Text("\(lastSecond / 86400 * 100, specifier: "%.3f") %")
-                .font(.title2)
+                .font(.system(size: 24, design: .monospaced))
         }
         .foregroundColor(Color.textColor)
         // 1秒に1回現在時刻を確認
