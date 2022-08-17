@@ -42,12 +42,12 @@ struct TimerView: View {
                 
                 if isChangeFontSize {
                     Text("\(timerSecond, specifier: "%.0f") sec")
-                        .font(.custom("Futura", size: fontSizeVal))
+                        .font(.system(size: fontSizeVal, design:.monospaced))
                         .foregroundColor(Color.textColor)
                         .padding()
                 } else {
                     Text("\(timerSecond, specifier: "%.0f") sec")
-                        .font(.custom("Futura", size: 40))
+                        .font(.system(size: 40, design:.monospaced))
                         .foregroundColor(Color.textColor)
                         .padding()
                 }
