@@ -57,11 +57,11 @@ struct StopwatchView: View {
                 
                 if isChangeFontSize {
                     Text("\(stopwatchSecond, specifier: "%.0f") sec")
-                        .font(.custom("Futura", size: fontSizeVal))
+                        .font(.system(size: fontSizeVal, design:.monospaced))
                         .foregroundColor(Color.textColor)
                 } else {
                     Text("\(stopwatchSecond, specifier: "%.0f") sec")
-                        .font(.custom("Futura", size: 50))
+                        .font(.system(size: 50, design:.monospaced))
                         .foregroundColor(Color.textColor)
                 }
                 
