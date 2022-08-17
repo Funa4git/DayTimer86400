@@ -28,11 +28,11 @@ struct ClockView: View {
             VStack {
                 if isCenterText {
                     Text("current day time")
-                        .font(.title)
+                        .font(.custom("Futura", size: fontSizeVal*0.7, relativeTo: .title))
                 } else {
                     HStack {
                         Text("  current day time")
-                            .font(.title)
+                            .font(.custom("Futura", size: fontSizeVal*0.7, relativeTo: .title))
                         Spacer()
                     }
                 }
@@ -61,11 +61,11 @@ struct ClockView: View {
             VStack {
                 if isCenterText {
                     Text("  last day time")
-                        .font(.title)
+                        .font(.custom("Futura", size: fontSizeVal*0.7, relativeTo: .title))
                 } else {
                     HStack {
                         Text("  last day time")
-                            .font(.title)
+                            .font(.custom("Futura", size: fontSizeVal*0.7, relativeTo: .title))
                         Spacer()
                     }
                 }
@@ -85,11 +85,11 @@ struct ClockView: View {
             VStack {
                 if isCenterText {
                     Text("  view of %  ")
-                        .font(.title)
+                        .font(.custom("Futura", size: fontSizeVal*0.7, relativeTo: .title))
                 } else {
                     HStack {
                         Text("  view of %  ")
-                            .font(.title)
+                            .font(.custom("Futura", size: fontSizeVal*0.7, relativeTo: .title))
                         Spacer()
                     }
                 }

@@ -61,7 +61,7 @@ struct StopwatchView: View {
                         .foregroundColor(Color.textColor)
                 } else {
                     Text("\(stopwatchSecond, specifier: "%.0f") sec")
-                        .font(.system(size: 50, design:.monospaced))
+                        .font(.system(size: 40, design:.monospaced))
                         .foregroundColor(Color.textColor)
                 }
                 
