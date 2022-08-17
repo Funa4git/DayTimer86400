@@ -39,10 +39,10 @@ struct ClockView: View {
                 
                 if isChangeFontSize {
                     Text("\(currentSecond, specifier: "%.0f") sec")
-                        .font(.system(size: fontSizeVal, design:.default))
+                        .font(.system(size: fontSizeVal, design:.monospaced))
                 } else {
                     Text("\(currentSecond, specifier: "%.0f") sec")
-                        .font(.largeTitle)
+                        .font(.system(.largeTitle, design: .monospaced))
                 }
             }
             // 0.1秒に1回現在時刻を確認
@@ -72,10 +72,10 @@ struct ClockView: View {
                 
                 if isChangeFontSize {
                     Text("\(lastSecond, specifier: "%.0f") sec")
-                        .font(.system(size: fontSizeVal, design:.default))
+                        .font(.system(size: fontSizeVal, design:.monospaced))
                 } else {
                     Text("\(lastSecond, specifier: "%.0f") sec")
-                        .font(.largeTitle)
+                        .font(.system(.largeTitle, design: .monospaced))
                 }
             }
             .padding()
@@ -95,10 +95,10 @@ struct ClockView: View {
                 }
                 if isChangeFontSize {
                     Text("\(lastSecond / daySecond * 100, specifier: "%.3f") %")
-                        .font(.system(size: fontSizeVal, design:.default))
+                        .font(.system(size: fontSizeVal, design:.monospaced))
                 } else {
                     Text("\(lastSecond / daySecond * 100, specifier: "%.3f") %")
-                        .font(.largeTitle)
+                        .font(.system(.largeTitle, design: .monospaced))
                 }
             }
             .padding()
