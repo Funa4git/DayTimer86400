@@ -79,6 +79,14 @@ struct TimerView: View {
                         
                         Spacer()
                     }
+                    .overlay(
+                    Capsule()
+                        .foregroundColor(.gray)
+                        .opacity(0.2)
+                        .frame(width: 100, height: 8)
+                        .padding()
+                    ,alignment: .top
+                    )
                 }
                 
                 Spacer()
