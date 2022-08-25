@@ -99,20 +99,21 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8C2F526B28B7827800382F5A /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ja; path = ja.lproj/Info.plist; sourceTree = "<group>"; };
+		8C2F526D28B7828700382F5A /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ja; path = ja.lproj/Info.plist; sourceTree = "<group>"; };
+		8C2F526F28B7829000382F5A /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ja; path = ja.lproj/Info.plist; sourceTree = "<group>"; };
 		94567D0F280AE36400F5849C /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		94567D15280FF95C00F5849C /* WidgetTimer86400Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WidgetTimer86400Extension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		94567D17280FF95C00F5849C /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		94567D19280FF95D00F5849C /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		94567D1C280FF95D00F5849C /* WidgetTimer86400.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetTimer86400.swift; sourceTree = "<group>"; };
 		94567D1F280FF96000F5849C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		94567D21280FF96000F5849C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94C2D1E0280AB2A300944E87 /* DayTimer86400.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DayTimer86400.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94C2D1E3280AB2A300944E87 /* DayTimer86400App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayTimer86400App.swift; sourceTree = "<group>"; };
 		94C2D1E5280AB2A300944E87 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		94C2D1E7280AB2A600944E87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94C2D1EA280AB2A600944E87 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		94C2D1F1280AB37600944E87 /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
-		94C2D1F3280ABC7B00944E87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		94E6EF302811506100735DA2 /* extensionDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionDate.swift; sourceTree = "<group>"; };
 		94E6EF35281165AF00735DA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; name = Base; path = Base.lproj/WidgetTimer86400.intentdefinition; sourceTree = "<group>"; };
 		94EA11F82822B8B80096E1AD /* 86400.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 86400.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,7 +126,6 @@
 		94EA120D2822B8C20096E1AD /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		94EA120F2822B8C30096E1AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94EA12122822B8C30096E1AD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		94EA12142822B8C40096E1AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94EA12152822B8C40096E1AD /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		94F0556C2819357400BDBEF4 /* StopwatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchView.swift; sourceTree = "<group>"; };
 		94F055702819DE2600BDBEF4 /* extensionAppStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionAppStorage.swift; sourceTree = "<group>"; };
@@ -175,7 +175,7 @@
 				94E6EF302811506100735DA2 /* extensionDate.swift */,
 				94E6EF36281165AF00735DA2 /* WidgetTimer86400.intentdefinition */,
 				94567D1F280FF96000F5849C /* Assets.xcassets */,
-				94567D21280FF96000F5849C /* Info.plist */,
+				8C2F526C28B7827800382F5A /* Info.plist */,
 			);
 			path = WidgetTimer86400;
 			sourceTree = "<group>";
@@ -207,7 +207,7 @@
 		94C2D1E2280AB2A300944E87 /* DayTimer86400 */ = {
 			isa = PBXGroup;
 			children = (
-				94C2D1F3280ABC7B00944E87 /* Info.plist */,
+				8C2F527028B7829000382F5A /* Info.plist */,
 				94C2D1E3280AB2A300944E87 /* DayTimer86400App.swift */,
 				94C2D1E5280AB2A300944E87 /* ContentView.swift */,
 				94C2D1F1280AB37600944E87 /* ClockView.swift */,
@@ -246,7 +246,7 @@
 				94EA120B2822B8C20096E1AD /* NotificationView.swift */,
 				94EA120D2822B8C20096E1AD /* ComplicationController.swift */,
 				94EA120F2822B8C30096E1AD /* Assets.xcassets */,
-				94EA12142822B8C40096E1AD /* Info.plist */,
+				8C2F526E28B7828700382F5A /* Info.plist */,
 				94EA12152822B8C40096E1AD /* PushNotificationPayload.apns */,
 				94EA12112822B8C30096E1AD /* Preview Content */,
 			);
@@ -479,6 +479,30 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		8C2F526C28B7827800382F5A /* Info.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C2F526B28B7827800382F5A /* ja */,
+			);
+			name = Info.plist;
+			sourceTree = "<group>";
+		};
+		8C2F526E28B7828700382F5A /* Info.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C2F526D28B7828700382F5A /* ja */,
+			);
+			name = Info.plist;
+			sourceTree = "<group>";
+		};
+		8C2F527028B7829000382F5A /* Info.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C2F526F28B7829000382F5A /* ja */,
+			);
+			name = Info.plist;
+			sourceTree = "<group>";
+		};
 		94E6EF36281165AF00735DA2 /* WidgetTimer86400.intentdefinition */ = {
 			isa = PBXVariantGroup;
 			children = (
