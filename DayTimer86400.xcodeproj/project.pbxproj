@@ -102,6 +102,7 @@
 		8C2F526B28B7827800382F5A /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ja; path = ja.lproj/Info.plist; sourceTree = "<group>"; };
 		8C2F526D28B7828700382F5A /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ja; path = ja.lproj/Info.plist; sourceTree = "<group>"; };
 		8C2F526F28B7829000382F5A /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ja; path = ja.lproj/Info.plist; sourceTree = "<group>"; };
+		8CA2984828B8947800B2DFF3 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/WidgetTimer86400.strings; sourceTree = "<group>"; };
 		94567D0F280AE36400F5849C /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		94567D15280FF95C00F5849C /* WidgetTimer86400Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WidgetTimer86400Extension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		94567D17280FF95C00F5849C /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
@@ -507,6 +508,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				94E6EF35281165AF00735DA2 /* Base */,
+				8CA2984828B8947800B2DFF3 /* ja */,
 			);
 			name = WidgetTimer86400.intentdefinition;
 			sourceTree = "<group>";
@@ -520,7 +522,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = VK3Y2B9G25;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WidgetTimer86400/ja.lproj/Info.plist;
@@ -548,7 +550,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = VK3Y2B9G25;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WidgetTimer86400/ja.lproj/Info.plist;
@@ -693,7 +695,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"DayTimer86400/Preview Content\"";
 				DEVELOPMENT_TEAM = VK3Y2B9G25;
 				ENABLE_PREVIEWS = YES;
@@ -726,7 +728,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"DayTimer86400/Preview Content\"";
 				DEVELOPMENT_TEAM = VK3Y2B9G25;
 				ENABLE_PREVIEWS = YES;
@@ -759,7 +761,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = VK3Y2B9G25;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = WatchTimer86400_WatchKit_Extension;
@@ -784,7 +786,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = VK3Y2B9G25;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = WatchTimer86400_WatchKit_Extension;
@@ -807,7 +809,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"WatchTimer86400 WatchKit Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = VK3Y2B9G25;
 				ENABLE_PREVIEWS = YES;
@@ -838,7 +840,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"WatchTimer86400 WatchKit Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = VK3Y2B9G25;
 				ENABLE_PREVIEWS = YES;
