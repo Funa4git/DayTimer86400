@@ -523,7 +523,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VK3Y2B9G25;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WidgetTimer86400/Info.plist;
+				INFOPLIST_FILE = WidgetTimer86400/ja.lproj/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = 86400;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -551,7 +551,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VK3Y2B9G25;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WidgetTimer86400/Info.plist;
+				INFOPLIST_FILE = WidgetTimer86400/ja.lproj/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = 86400;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -698,7 +698,7 @@
 				DEVELOPMENT_TEAM = VK3Y2B9G25;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = DayTimer86400/Info.plist;
+				INFOPLIST_FILE = DayTimer86400/ja.lproj/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = 86400;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -731,7 +731,7 @@
 				DEVELOPMENT_TEAM = VK3Y2B9G25;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = DayTimer86400/Info.plist;
+				INFOPLIST_FILE = DayTimer86400/ja.lproj/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = 86400;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -812,7 +812,7 @@
 				DEVELOPMENT_TEAM = VK3Y2B9G25;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "WatchTimer86400 WatchKit Extension/Info.plist";
+				INFOPLIST_FILE = "WatchTimer86400 WatchKit Extension/ja.lproj/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = 86400;
 				INFOPLIST_KEY_CLKComplicationPrincipalClass = WatchTimer86400_WatchKit_Extension.ComplicationController;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -843,7 +843,7 @@
 				DEVELOPMENT_TEAM = VK3Y2B9G25;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "WatchTimer86400 WatchKit Extension/Info.plist";
+				INFOPLIST_FILE = "WatchTimer86400 WatchKit Extension/ja.lproj/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = 86400;
 				INFOPLIST_KEY_CLKComplicationPrincipalClass = WatchTimer86400_WatchKit_Extension.ComplicationController;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
